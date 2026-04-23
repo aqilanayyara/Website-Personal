@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio | Beranda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0fdfa; /* Hijau mint pucat */
+            margin: 0;
+            color: #333;
+        }
+
+        /* HEADER DISAMAKAN DENGAN PROFIL */
+        header {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('headerportofolio.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-weight: 300;
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* NAVIGASI DISAMAKAN DENGAN PROFIL */
+        nav {
+            background-color: #231709;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+        
+        nav a:hover {
+            color: #d63384;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        /* GRID UTAMA */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            align-items: start;
+        }
+
+        /* BUBBLE KONTEN */
+        .bubble {
+            background-color: white;
+            padding: 35px;
+            border-radius: 35px; 
+            margin-bottom: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border: 1px solid #e0f2f1;
+            transition: transform 0.3s ease;
+        }
+
+        .bubble:hover {
+            transform: translateY(-5px);
+        }
+
+        .bubble h2 {
+            font-family: 'Playfair Display', serif;
+            color: #231709;
+            margin-top: 0;
+            font-size: 1.6rem;
+            border-left: 5px solid #d63384;
+            padding-left: 15px;
+        }
+
+        .bubble p {
+            line-height: 1.8;
+            font-size: 1.05rem;
+            color: #444;
+            text-align: justify;
+        }
+
+        /* LAYOUT PHOTOBOOTH STRIP */
+        .photobooth-container {
+            position: sticky;
+            top: 100px;
+        }
+
+        .photobooth-strip {
+            background-color: white;
+            padding: 15px 15px 40px 15px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            border: 1px solid #ddd;
+            width: fit-content;
+            margin: 0 auto;
+            transform: rotate(-2deg);
+        }
+
+        .photobooth-strip img {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 10px;
+            border: 1px solid #eee;
+        }
+
+        .photobooth-strip::after {
+            content: "✨ Ayya's Memory 2026 ✨";
+            display: block;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            color: #888;
+            margin-top: 20px;
+        }
+
+        /* STATUS BAR */
+        .status-card {
+            background: linear-gradient(135deg, #231709, #4a341d);
+            color: white;
+            padding: 25px;
+            border-radius: 30px;
+            margin-top: 30px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .status-bar {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            height: 12px;
+            margin: 15px 0;
+            overflow: hidden;
+        }
+
+        .status-fill {
+            background: #d63384; /* Warna pink biar matching */
+            width: 100%;
+            height: 100%;
+        }
+
+        footer {
+            background-color: #231709;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 768px) {
+            .content-grid { grid-template-columns: 1fr; }
+            .photobooth-strip { transform: rotate(0deg); }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>PORTOFOLIO AQILA NAYYARA</h1>
+    <p>Karya Nyata dari Proses Belajar</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="video.html">Video</a>
+    <a href="project.html">My Project</a>
+</nav>
+
+<div class="container">
+    <div class="content-grid">
+
+        <div class="content-text">
+            
+            <div class="bubble">
+                <h2>👋 Selamat Datang</h2>
+                <p>Website ini merupakan media pendukung untuk menampilkan hasil Ujian Praktik Terintegrasi. Konten utama pada website ini adalah video broadcasting pembelajaran yang berisi penyampaian teks argumentasi secara lisan.</p>
+            </div>
+
+            <div class="bubble">
+                <h2>📖 Tentang Website Ini</h2>
+                <p>Website ini merupakan website portofolio digital yang berisi hasil karya dan pembelajaran saya selama mengikuti Ujian Praktik Terintegrasi.</p>
+            </div>
+
+            <div class="bubble">
+                <h2>🎯 Tujuan Pembuatan</h2>
+                <p>Tujuan pembuatan website ini adalah untuk menampilkan karya yang telah saya buat serta melatih kemampuan saya dalam membuat website sederhana menggunakan HTML.</p>
+            </div>
+
+            <div class="bubble">
+                <h2>💡 Topik Argumentasi</h2>
+                <p>Topik yang saya angkat dalam karya ini adalah keterkaitan antara sistem pendidikan dengan permasalahan lingkungan, khususnya limbah daun dan dampak dari fenomena <i>fast fashion</i>. Saya juga membahas bagaimana program <i>Internship Curriculum</i> (IC) dapat menjadi solusi melalui pembelajaran berbasis praktik, salah satunya melalui kegiatan ecoprint.</p>
+            </div>
+
+            <div class="bubble">
+                <h2>🌟 Harapan dari Video</h2>
+                <p>Melalui video dan karya ini, saya berharap penonton dapat menyadari bahwa menjaga lingkungan merupakan tanggung jawab bersama. Hal kecil seperti memanfaatkan limbah atau mengurangi penggunaan barang yang berlebihan dapat memberikan dampak yang besar.</p>
+                <p>Saya juga berharap penonton dapat melihat bahwa pembelajaran tidak hanya terjadi di dalam kelas, tetapi juga melalui pengalaman nyata. Dengan adanya program seperti IC, siswa dapat lebih siap menghadapi masa depan.</p>
+            </div>
+
+            <div class="bubble">
+                <h2>💭 Refleksi & Kesan</h2>
+                <p>Membuat video dan teks argumentasi ini cukup menantang, tetapi juga seru. Saya belajar bagaimana menyusun pendapat dengan lebih jelas dan memahami masalah lingkungan di sekitar. Saya berharap program IC bisa terus berjalan karena sangat membantu siswa untuk belajar secara nyata.</p>
+            </div>
+
+        </div>
+
+        <div class="photobooth-container">
+            <div class="photobooth-strip">
+                <img src="https://i.pinimg.com/736x/8f/89/0c/8f890c0a94a9e0b2cb93196e7334a5da.jpg" alt="1">
+                <img src="https://i.pinimg.com/1200x/c6/74/d4/c674d42fe3848365fbe98b30797721a8.jpg" alt="2">
+                <img src="https://i.pinimg.com/736x/49/de/c7/49dec7ca916612ca2de3b19f8cd5f109.jpg" alt="3">
+                <img src="https://i.pinimg.com/736x/20/3e/df/203edffaac7c5969d0106460bb50cea6.jpg" alt="4">
+            </div>
+
+            <div class="status-card">
+                <b>Ujian Praktik Status:</b>
+                <div class="status-bar">
+                    <div class="status-fill"></div>
+                </div>
+                <small>100% Completed ✨</small>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>Ujian Praktik Terintegrasi | SMPIT Al Haraki | Siti Nurliana @ 2026</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio | Profil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0fdfa;
+            margin: 0;
+            color: #333;
+        }
+
+        header {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('headerportofolio.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-weight: 300;
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #231709;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+        
+        nav a:hover {
+            color: #d63384;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        /* BUBBLE UTAMA */
+        .profile-bubble {
+            background-color: white;
+            padding: 50px;
+            border-radius: 40px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+            border: 1px solid #e0f2f1;
+        }
+
+        /* FOTO PROFIL FANCY (OFFSET FRAME) */
+        .profile-photo {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-top: 20px;
+        }
+
+        .profile-photo img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 20px; /* Bentuk kotak melengkung halus */
+            border: 2px solid #231709; 
+            padding: 10px;
+            background-color: white;
+            /* Bayangan kotak tegas di belakang foto */
+            box-shadow: 15px 15px 0px #d63384; 
+            transition: all 0.4s ease;
+        }
+
+        /* Efek saat foto disentuh kursor */
+        .profile-photo img:hover {
+            transform: translate(-8px, -8px);
+            box-shadow: 25px 25px 0px #231709;
+        }
+
+        /* SKILL TAGS */
+        .skill-tags {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #fdf2f8;
+            color: #d63384;
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin: 5px;
+            border: 1px solid #fbcfe8;
+        }
+
+        /* CONTENT TEXT */
+        .content-text h2 {
+            font-family: 'Playfair Display', serif;
+            color: #231709;
+            font-size: 1.8rem;
+            border-left: 5px solid #d63384;
+            padding-left: 15px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+
+        .content-text p {
+            text-align: justify;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        footer {
+            background-color: #231709;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>PORTOFOLIO AQILA NAYYARA</h1>
+    <p>Karya Nyata dari Proses Belajar</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="video.html">Video</a>
+    <a href="project.html">My Project</a>
+</nav>
+
+<div class="container">
+
+    <div class="profile-bubble">
+        <div class="profile-photo">
+            <img src="Ayyakelas9.jpg" alt="Foto Profil">
+        </div>
+
+        <div class="skill-tags">
+            <span class="tag">🎨 Drawing</span>
+            <span class="tag">📐 Mathematics</span>
+            <span class="tag">🗣 English</span>
+            <span class="tag">🏛 Future Architect</span>
+        </div>
+
+        <div class="content-text">
+
+            <h2>Profil Singkat</h2>
+            <p>
+                Perkenalkan nama saya <strong>Aqila Nayyara Rashida</strong> dari SMPIT Al Haraki dan saya sekarang duduk di kelas 9 Al Araf.
+            </p>
+
+            <h2>Tentang Saya</h2>
+            <p>
+                Saya biasa dipanggil <strong>Ayya</strong>. Saya anak ke-2 dari 4 bersaudara dan saya dikenal sebagai siswa yang ceria, percaya diri dan ramah. Dengan kepribadian tersebut, saya dapat memberi dampak positif dalam berorganisasi, mengembangkan relasi dan juga memberikan suasana lingkungan yang positif serta supportif.
+            </p>
+
+            <h2>Minat dan Bakat</h2>
+            <p>
+                Saya memiliki minat dalam bidang seni maupun pendidikan. Terutama menggambar dan pembelajaran matematika. Selain itu, saya juga mempunyai bakat dalam berbahasa Inggris, baik dalam menulis maupun berbicara. Bakat tersebut saya terus kembangkan melalui latihan dan juga pengalaman, serta berhasil meraih beberapa kejuaraan berbahasa Inggris di sekolah. 
+            </p>
+
+            <h2>Cita-cita dan Harapan</h2>
+            <p>
+                Saya bercita-cita untuk menjadi <strong>arsitek</strong>. Dengan menjadi seorang arsitek, saya berharap dapat menciptakan bangunan yang tidak hanya unik, tetapi juga memberi dampak positif bagi bumi.
+            </p>
+
+            <h2>Kesan dan Pesan Selama Kelas IX</h2>
+            <p>
+                Selama bersekolah di SMPIT Al Haraki, saya berhasil menemukan jati diri saya yang awalnya masih bingung cara beradaptasi dengan lingkungan sampai akhirnya dapat menyesuaikan diri dengan teman-teman sekitar. Banyak sekali kesan bahagia yang saya dapatkan selama bersekolah di SMPIT Al Haraki, mulai dari kelas 7 sampai 9. Saya berharap pengalaman yang telah saya lalui dapat menjadi bekal untuk terus berkembang dan meningkatkan diri.
+            </p>
+
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>Ujian Praktik Terintegrasi | SMPIT Al Haraki | Siti Nurliana @ 2026</p>
+</footer>
+
+</body>
+</html>

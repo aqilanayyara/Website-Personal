@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>My Biodata</title>
+    <style>
+        /* 1. Background utama halaman */
+        body {
+            background-image: url('backgroundutamaportofolio.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* 2. Gaya "Bubble" untuk setiap bagian */
+        .bubble-section {
+            background-color: rgba(255, 255, 255, 0.9); /* Putih transparan */
+            border-radius: 25px; /* Membuat sudut melengkung seperti bubble */
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Efek bayangan halus */
+            border: 2px solid #ABD6D5;
+        }
+
+        /* 3. Gaya Foto Profil (Bulat, Renda, & Bisa diklik) */
+        .profile-frame {
+            display: inline-block;
+            transition: transform 0.3s; /* Efek saat kursor di atas foto */
+        }
+
+        .profile-frame:hover {
+            transform: scale(1.05); /* Foto sedikit membesar saat disentuh */
+        }
+
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%; /* Membuat foto jadi bulat sempurna */
+            border: 8px dashed #231709; /* Efek Renda Putus-putus */
+            padding: 5px;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        /* 4. Warna Tulisan */
+        h1 { color: #231709; margin-bottom: 10px; }
+        h2 { color: #231709; }
+        p { color: #231709; line-height: 1.6; }
+        
+        .bio-text {
+            font-size: 18px;
+            text-align: left;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<center>
+    <div style="width: 85%;">
+
+        <div class="bubble-section" style="background-image: url('backgroundportofolio.jpg'); background-size: cover;">
+            <h1 style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-size: 50px;">BIODATA</h1>
+        </div>
+
+        <div class="bubble-section">
+            <img src="SMPIT Al Haraki (1).jpg" style="height: 80px; margin-bottom: 20px;" alt="Logo"><br>
+            
+            <table width="100%" border="0">
+                <tr>
+                    <td width="60%" valign="top">
+                        <div class="bio-text">
+                            <p><b>Nama :</b> Aqila Nayyara Rashida</p>
+                            <p><b>Lahir :</b> Depok, 19 Agustus 2011</p>
+                            <p><b>Telepon :</b> 0878-2048-9748</p>
+                            <p><b>Alamat :</b> Sawangan, Duren Lantabur Residence</p>
+                            <p><b>Email :</b> aqilla.nayyara@alharaki.sch.id</p>
+                            <p><b>Hobi :</b> Bulu tangkis, Melukis, Musik</p>
+                            <p><b>Cita-cita :</b> Arsitektur</p>
+                        </div>
+                    </td>
+                    <td width="40%">
+                        <a href="https://open.spotify.com/playlist/5XEz2hwQj5YeA3ljmqsFna" target="_blank" class="profile-frame">
+                            <img src="ayyacantik.jpg" class="profile-img" title="Klik untuk dengerin musik bareng aku!">
+                        </a>
+                        <p style="font-size: 12px; color: #231709;"><i>*Klik fotoku untuk ke Spotify!</i></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="bubble-section">
+            <h2>About Me</h2>
+            <p style="text-align: justify; text-indent: 50px;">
+                Tak kenal maka tak sayang, perkenalkan saya <b>Aqila Nayyara Rashida</b> dari kelas 9 Al Araf. Saya paling suka mendengarkan musik karena dapat memperbaiki mood saya kapan pun. Saya bercita-cita menjadi arsitek yang peduli pada ekosistem lingkungan. Karena saya percaya manusia bisa memberikan solusi bagi masalah lingkungan yang kita buat sendiri.
+            </p>
+        </div>
+
+        <div class="bubble-section">
+            <h2>My Daily Video</h2>
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/GhpAaNkdKjc" 
+                frameborder="0" 
+                style="border-radius: 15px; border: 3px solid #ABD6D5;"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+    </div>
+</center>
+
+<footer style="background-color: #ABD6D5; padding: 20px; border-radius: 20px 20px 0 0;">
+    <center><b>&copy; 2025 Aqila Nayyara Rashida</b></center>
+</footer>
+
+</body>
+</html>

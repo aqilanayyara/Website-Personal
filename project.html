@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio | My Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0fdfa; /* Hijau mint pucat */
+            margin: 0;
+            color: #333;
+        }
+
+        /* HEADER DISAMAKAN */
+        header {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('headerportofolio.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-weight: 300;
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* NAVIGASI DISAMAKAN */
+        nav {
+            background-color: #231709;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+        
+        nav a:hover {
+            color: #d63384;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+
+        /* INTRO BUBBLE */
+        .intro-bubble {
+            background: white;
+            padding: 40px;
+            border-radius: 40px;
+            text-align: center;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border: 1px solid #e0f2f1;
+        }
+
+        .intro-bubble h2 {
+            font-family: 'Playfair Display', serif;
+            color: #231709;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .intro-bubble p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /* GRID PROJECT */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            background-color: white;
+            border-radius: 35px; /* Bubble style */
+            overflow: hidden;
+            text-align: center;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            position: relative;
+            border: 1px solid #e0f2f1;
+        }
+
+        .project-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.6s;
+        }
+
+        .project-card:hover img {
+            transform: scale(1.1);
+        }
+
+        /* STATUS BADGE */
+        .status-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #d63384; /* Warna aksen pink */
+            color: white;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            z-index: 2;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .project-info {
+            padding: 25px;
+        }
+
+        .project-info h3 {
+            font-family: 'Playfair Display', serif;
+            margin: 0 0 12px 0;
+            color: #231709;
+            font-size: 1.4rem;
+        }
+
+        /* SKILL BAR */
+        .skill-bar-container {
+            background: #f1f1f1;
+            border-radius: 10px;
+            height: 8px;
+            width: 90%;
+            margin: 15px auto;
+            overflow: hidden;
+        }
+
+        .skill-fill {
+            background: linear-gradient(to right, #231709, #d63384);
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        /* BUTTON VIEW */
+        .btn-view {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background-color: #231709;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .btn-view:hover {
+            background-color: #d63384;
+            transform: scale(1.05);
+            letter-spacing: 1px;
+        }
+
+        footer {
+            background-color: #231709;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 70px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MY CREATIVE PROJECTS</h1>
+    <p>Aqila Nayyara Rashida | Proses Menjadi Arsitek Masa Depan</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="video.html">Video</a>
+    <a href="project.html">My Project</a>
+</nav>
+
+<div class="container">
+
+    <div class="intro-bubble">
+        <h2>📂 Collection of Works</h2>
+        <p>Setiap proyek adalah langkah kecil menuju impian besar sebagai seorang arsitek.</p>
+    </div>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <span class="status-badge">Completed</span>
+            <img src="project1.jpg" alt="Video">
+            <div class="project-info">
+                <h3>Video Argumentasi</h3>
+                <p style="font-size: 13px; color: #777;">Tugas menyusun argumen tentang lingkungan & fast fashion.</p>
+                <div class="skill-bar-container"><div class="skill-fill" style="width: 100%;"></div></div>
+                <a href="video.html" class="btn-view">Lihat Video</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <span class="status-badge" style="background: #231709;">Finalizing</span>
+            <img src="project2.jpg" alt="Portofolio">
+            <div class="project-info">
+                <h3>Website Portofolio</h3>
+                <p style="font-size: 13px; color: #777;">Coding HTML & CSS dari nol untuk Ujian Praktik.</p>
+                <div class="skill-bar-container"><div class="skill-fill" style="width: 95%;"></div></div>
+                <a href="Portofolioawalkelas9.html" class="btn-view">Cek Web</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <span class="status-badge" style="background: #d63384;">Fun Game</span>
+            <img src="https://i.pinimg.com/1200x/66/79/61/667961103e7365cd58cf0ecfd66f747e.jpg" alt="Game">
+            <div class="project-info">
+                <h3>Game Edukasi</h3>
+                <p style="font-size: 13px; color: #777;">Dibuat dengan Scratch untuk media belajar interaktif.</p>
+                <div class="skill-bar-container"><div class="skill-fill" style="width: 85%;"></div></div>
+                <a href="https://scratch.mit.edu/projects/1132753202/fullscreen/" target="_blank" class="btn-view">Mainkan!</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <span class="status-badge" style="background: #10ac84;">New</span>
+            <img src="project4.jpg" alt="Future">
+            <div class="project-info">
+                <h3>Project lainnya</h3>
+                <p style="font-size: 13px; color: #777;">collage photo.</p>
+                <div class="skill-bar-container"><div class="skill-fill" style="width: 75%;"></div></div>
+                <a href="Memorable.html" class="btn-view">Dokumentasi</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>Ujian Praktik Terintegrasi | SMPIT Al Haraki | Aqila Nayyara @ 2026</p>
+</footer>
+
+</body>
+</html>

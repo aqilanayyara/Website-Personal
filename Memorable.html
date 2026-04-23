@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Memorable Moments | Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0fdfa;
+            margin: 0;
+            overflow-x: hidden;
+            color: #333;
+        }
+
+        /* HEADER DISAMAKAN */
+        header {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('headerportofolio.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-weight: 300;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        /* INTRO */
+        .description {
+            max-width: 800px;
+            margin: 40px auto;
+            text-align: center;
+            line-height: 1.8;
+            color: #444;
+            padding: 30px;
+            background: white;
+            border-radius: 35px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border: 1px solid #e0f2f1;
+        }
+
+        .description h2 {
+            font-family: 'Playfair Display', serif;
+            color: #231709;
+            margin-bottom: 10px;
+        }
+
+        /* CONTAINER SLIDER */
+        .slider-container {
+            width: 100%;
+            overflow: hidden;
+            padding: 70px 0;
+            background: rgba(255, 255, 255, 0.2);
+            margin: 20px 0;
+        }
+
+        /* TRACK ANIMASI */
+        .slider-track {
+            display: flex;
+            width: calc(380px * 12); /* Lebar card * total kartu (termasuk duplikat) */
+            animation: scroll 30s linear infinite;
+        }
+
+        .slider-track:hover {
+            animation-play-state: paused;
+        }
+
+        /* FRAME PHOTOBOOTH STRIP */
+        .photo-card {
+            background: white;
+            padding: 15px 15px 50px 15px;
+            margin: 0 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+            width: 320px;
+            position: relative;
+            transform: rotate(1.5deg);
+            transition: 0.4s;
+        }
+
+        /* Selotip di atas foto */
+        .photo-card::before {
+            content: "";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90px;
+            height: 35px;
+            background: rgba(214, 51, 132, 0.25);
+            backdrop-filter: blur(2px);
+            z-index: 5;
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border: 1px solid #eee;
+        }
+
+        .photo-card p {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            text-align: center;
+            margin-top: 18px;
+            font-size: 1.1rem;
+            color: #231709;
+            font-weight: 600;
+        }
+
+        /* ANIMASI JALAN TERUS */
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-370px * 6)); } /* Geser sejauh jumlah foto unik */
+        }
+
+        /* BUTTON BACK */
+        .btn-back {
+            display: inline-block;
+            margin: 40px 0;
+            padding: 15px 45px;
+            background-color: #231709;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .btn-back:hover {
+            background-color: #d63384;
+            transform: translateY(-5px);
+            letter-spacing: 1px;
+        }
+
+        footer {
+            background-color: #231709;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MEMORABLE MOMENTS</h1>
+        <p>Potongan Cerita di Balik Setiap Perjalanan</p>
+    </header>
+
+    <div class="description">
+        <h2>✨ Sweet Memories</h2>
+        <p>Setiap foto punya cerita, setiap tawa punya makna. Galeri ini adalah kumpulan momen berharga yang saya kumpulkan selama masa sekolah, pengingat bahwa proses itu indah.</p>
+    </div>
+
+    <div class="slider-container">
+        <div class="slider-track">
+            <div class="photo-card">
+                <img src="foto1.jpg" alt="Moment 1">
+                <p>Passus! 📸</p>
+            </div>
+            <div class="photo-card" style="transform: rotate(-2deg);">
+                <img src="foto2.jpg" alt="Moment 2">
+                <p>School Vibes ✨</p>
+            </div>
+            <div class="photo-card">
+                <img src="foto3.jpg" alt="Moment 3">
+                <p>Al Araf Bulan Bahasa🏆</p>
+            </div>
+            <div class="photo-card" style="transform: rotate(2deg);">
+                <img src="foto4.jpg" alt="Moment 4">
+                <p>Togetherness 💖</p>
+            </div>
+            <div class="photo-card" style="transform: rotate(-1deg);">
+                <img src="foto5.jpg" alt="Moment 5">
+                <p>Creative Day 🎨</p>
+            </div>
+            <div class="photo-card">
+                <img src="foto6.jpg" alt="Moment 6">
+                <p>Last Class 🏫</p>
+            </div>
+            </div>
+        </div>
+
+    <center>
+        <a href="project.html" class="btn-back">⬅ Kembali ke Beranda</a>
+    </center>
+
+    <footer>
+        <p>Ujian Praktik Terintegrasi | SMPIT Al Haraki | Aqila Nayyara @ 2026</p>
+    </footer>
+
+</body>
+</html>
